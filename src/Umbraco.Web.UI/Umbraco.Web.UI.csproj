@@ -83,6 +83,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="App_Plugins\" />
     <Folder Include="Views\MacroPartials\" />
+    <Folder Include="Views\Test\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="CSharpTest.Net.Collections" Version="14.906.1403.1082" />
@@ -143,12 +144,17 @@
     <Compile Include="Config\splashes\NoNodes.aspx.designer.cs">
       <DependentUpon>noNodes.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Test\TestRouteConstraint.cs" />
+    <Compile Include="Test\TestRoutingComponent.cs" />
+    <Compile Include="Test\RoutingComposer.cs" />
+    <Compile Include="Test\TestRoutingHandler.cs" />
     <Content Include="Config\grid.editors.config.js" />
     <Content Include="Config\Lang\cs-CZ.user.xml" />
     <Content Include="Config\Lang\da-DK.user.xml" />
